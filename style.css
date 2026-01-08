@@ -15,21 +15,26 @@ body {
 /* CONTAINER */
 .container {
     display: flex;
-    gap: 60px;
-    padding: 50px;
-    transform: scale(1.15); 
+    gap: 40px;
+    padding: 30px;
+    max-height: 100vh;
+    align-items: stretch;
 }
+
 
 /* CARD */
 .card {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(18px);
-    width: 460px; /* BIGGER */
-    padding: 35px;
+    width: 440px;
+    padding: 28px;
     border-radius: 26px;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.15);
     overflow: hidden;
+    height: 680px;
+    display: flex;
+    flex-direction: column; 
 }
 
 /* HEADINGS */
@@ -74,7 +79,7 @@ input:focus {
 
 /* BUTTONS */
 button {
-    height: 56px;
+    height: 48px;
     border: none;
     border-radius: 16px;
     font-size: 15px;
@@ -92,7 +97,7 @@ button:hover {
 
 /* STRING RESULT */
 #stringResult {
-    margin-top: 25px;
+    margin-top: auto;
     padding: 18px;
     background: rgba(56, 189, 248, 0.15);
     border-radius: 16px;
@@ -139,3 +144,10 @@ button:hover {
 .equal {
     background: linear-gradient(135deg, #0800ff, #2200ff);
 }
+body {
+    overflow: hidden;
+}
+.card {
+    overflow: hidden;
+}
+
