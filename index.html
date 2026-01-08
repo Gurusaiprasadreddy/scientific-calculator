@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator & String Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LEFT: SCIENTIFIC CALCULATOR -->
+    <div class="card">
+        <h2>Scientific Calculator</h2>
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="delete" onclick="deleteLast()">DEL</button>
+            <button class="bracket" onclick="append('(')">(</button>
+            <button class="bracket" onclick="append(')')">)</button>
+
+
+            <button class="num" onclick="append('7')">7</button>
+            <button class="num" onclick="append('8')">8</button>
+            <button class="num" onclick="append('9')">9</button>
+            <button class="op" onclick="append('/')">÷</button>
+
+            <button class="num" onclick="append('4')">4</button>
+            <button class="num" onclick="append('5')">5</button>
+            <button class="num" onclick="append('6')">6</button>
+            <button class="op" onclick="append('*')">×</button>
+
+            <button class="num" onclick="append('1')">1</button>
+            <button class="num" onclick="append('2')">2</button>
+            <button class="num" onclick="append('3')">3</button>
+            <button class="op" onclick="append('-')">−</button>
+
+            <button class="num" onclick="append('0')">0</button>
+            <button class="num" onclick="append('.')">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+            <button class="op" onclick="append('+')">+</button>
+
+            <button class="trig" onclick="append('sin')">sin</button>
+            <button class="trig" onclick="append('cos')">cos</button>
+            <button class="trig" onclick="append('tan')">tan</button>
+            <button class="trig" onclick="append('sqrt')">√</button>
+
+
+            <button class="adv" onclick="append('pi')">π</button>
+            <button class="adv" onclick="append('^')">^</button>
+            <button class="adv" onclick="append('ln')">ln</button>
+            <button class="adv" onclick="append('log')">log</button>
+
+
+        </div>
+    </div>
+
+    <!-- RIGHT: STRING OPERATIONS -->
+    <div class="card">
+        <h2>String Operations</h2>
+
+        <input type="text" id="stringInput" placeholder="Enter first string">
+        <input type="text" id="stringInput2" placeholder="Enter second string">
+
+
+
+
+        <div class="string-buttons">
+            <button onclick="reverseString()">Reverse</button>
+            <button onclick="toUpper()">Uppercase</button>
+            <button onclick="toLower()">Lowercase</button>
+            <button onclick="countChars()">Length</button>
+
+            <button onclick="wordCount()">Word Count</button>
+            <button onclick="checkPalindrome()">Palindrome</button>
+            <button onclick="firstChar()">First Char</button>
+            <button onclick="lastChar()">Last Char</button>
+
+            <button onclick="removeSpaces()">Remove Spaces</button>
+            <button onclick="capitalizeWords()">Capitalize</button>
+
+            <button onclick="charFrequency()">Char Frequency</button>
+            <button onclick="removeSpecialChars()">Remove Symbols</button>
+
+            <button onclick="reverseWords()">Reverse Words</button>
+            <button onclick="repeatString()">Repeat ×2</button>
+            <button onclick="stringStatistics()">Statistics</button>
+            <button onclick="concatenation()">Concate nation</button>
+
+        </div>
+
+        <p id="stringResult"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
